@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "HelpMeOut",
+  "description": "This extension records your screen",
+  "icons": {
+    "32": "./Icons/favicon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "./Icons/favicon.png"
+    }
+  },
+
+  "host_permissions": ["http://*/", "https://*/*"],
+
+  "permissions": ["scripting", "tabs", "activeTab"],
+  "version": "0.0.1"
+}
